@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">七星时代</string>
+
+    <string name="ksyun_name">金山云</string>
+
+    <string name="home">首页</string>
+    <string name="classify">视频</string>
+    <string name="shopping_car">资讯</string>
+    <string name="mine">我的</string>
+
+    <string name="edit_phone">请输入手机号</string>
+    <string name="edit_pwd">请输入密码</string>
+    <string name="edit_new_pwd">新密码</string>
+    <string name="edit_confirm_pwd">确认密码</string>
+    <string name="edit_pay_pwd">设置支付密码</string>
+    <string name="shop_mine">账号设置</string>
+    <string name="my_amount_info">提示：手机账户余额仅支持商城消费使用，不可体现</string>
+
+    <string name="select_photo">选择图片</string>
+    <string name="all_photo">所有图片</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">最多只能选择9张</string>
+    <string name="select_mode">Select Mode</string>
+
+    <string name="service_wrong">网络异常！</string>
+    <string name="dialog_prompt">提示</string>
+    <string name="dialog_wrong">网络错误请稍后再试!</string>
+    <string name="dialog_timeout">网络连接超时!</string>
+    <string name="dialog_exit">确定退出登录么？</string>
+    <string name="dialog_wrong_nonet">暂时无法获取网络！</string>
+    <string name="prompt">提示</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="update_ok">马上更新</string>
+    <string name="update_cancel">下次再说</string>
+
+    <string name="date_today">今天</string>
+    <string name="date_yesterday">昨天</string>
+
+    <string name="share_to_pengyou">朋友圈</string>
+    <string name="share_to_weixin">微信</string>
+
+    <string name="jf_exchange">积分兑换</string>
+
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="ksyun_introduction_1">金山视频云依托业界领先的编解码技术与强大的分发服务，立足于金山云顶级的IaaS基础设施，提供一站式云直、点播服务。</string>
+    <string name="ksyun_introduction_2">金山视频云提供内容生产及观看的工具，即推流播放SDK，凭借其完善的功能、卓越的兼容性及性能，满足客户不断涌现的业务需求，再通过金山魔方系统与第三方平台共同实现视频生态链的繁荣。</string>
+    <string name="ksyun_introduction_3">金山云推流SDK支持H.264/H.265编码、软硬编，支持多种美颜滤镜特效、连麦，音频模块也在不断强化：美声、升降调、变声、混音等，弱网优化模块也颇有建树：码率自适应、网络主动探测、动态帧率等。</string>
+    <string name="ksyun_introduction_4">金山云播放SDK通过首屏秒开、直播追赶等直播优化策略给直播提供一流的直播体验。</string>
+</resources>

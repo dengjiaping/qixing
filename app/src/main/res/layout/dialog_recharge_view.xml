@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_F"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+        <TextView
+            style="@style/text_black.13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="星币充值"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_default1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_recharge_view_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dialog_recharge_name_wx"
+                style="@style/text_black.13"
+                android:textColor="@color/color_text_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="微信支付"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_small"
+                android:layout_below="@id/dialog_recharge_name_wx">
+                <View
+                    android:visibility="gone"
+                    style="@style/line_gray.0"/>
+                <View
+                    android:id="@+id/view_line1"
+                    style="@style/line_gray.0"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:background="@color/color_text_orange"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_recharge_view_zfb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dialog_recharge_name_zfb"
+                style="@style/text_black.13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="支付宝支付"
+                 />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_small"
+                android:layout_below="@id/dialog_recharge_name_zfb">
+                <View
+                    android:visibility="gone"
+                    style="@style/line_gray.0"/>
+                <View
+                    android:id="@+id/view_line2"
+                    style="@style/line_gray.0"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:background="@color/color_text_orange"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_recharge_view_ye"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/dialog_recharge_name_ye"
+                style="@style/text_black.13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="余额支付"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_small"
+                android:layout_below="@id/dialog_recharge_name_ye">
+                <View
+                    android:visibility="gone"
+                    style="@style/line_gray.0"/>
+                <View
+                    android:id="@+id/view_line3"
+                    style="@style/line_gray.0"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:background="@color/color_text_orange"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+        <com.qixing.view.MyGridView
+            android:id="@+id/dialog_recharge_gv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:divider="@color/white_F"
+            android:dividerHeight="1dp"
+            android:visibility="visible">
+        </com.qixing.view.MyGridView>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="8dp"
+        style="@style/line_gray.0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@drawable/icon_logo" />
+        <TextView
+            style="@style/text_black.13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="当前星币："
+            />
+        <TextView
+            android:id="@+id/dialog_rechrge_tv_bi"
+            style="@style/text_red.13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@id/share_icon_wechat"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_rechrge_btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white_F"
+        android:visibility="visible"
+        android:background="@drawable/btn_red_selector"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="确认充值" />
+
+</LinearLayout>

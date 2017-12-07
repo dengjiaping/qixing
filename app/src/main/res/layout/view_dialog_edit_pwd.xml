@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_dialog_tv_title"
+        style="@style/text_black.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:text="标题"
+         />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        style="@style/line_gray.0"/>
+    <TextView
+        android:id="@+id/view_dialog_tv_context"
+        style="@style/text_black.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/view_dialog_tv_money"
+        style="@style/text_black.16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:text=""
+        />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/mGridPasswordView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:gpvTextSize="25sp"
+        app:gpvLineWidth="1dp"
+        app:gpvGridColor="#ffffff"
+        app:gpvPasswordLength="6"
+        app:gpvPasswordType="numberPassword">
+        <!--app:gpvTextColor="#2196F3"--><!--字体颜色-->
+        <!--app:gpvLineColor="#2196F3"--><!--边框色-->
+        <!--app:gpvPasswordTransformation="$"--><!--隐藏图案-->
+        <!-- / textPassword / textVisiblePassword / textWebPassword-->
+
+    </com.jungly.gridpasswordview.GridPasswordView>
+
+    <EditText
+        android:id="@+id/view_dialog_edit_context"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+
+        android:background="@drawable/edit_white_selector"
+        android:gravity="left|center_vertical"
+        android:textColorHint="@color/gray_69"
+        android:hint="请输入推荐人ID"
+        android:textColor="@color/gray_3f"
+        android:textSize="14dp"
+        android:inputType="numberSigned"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/view_dialog_tv_content"
+        style="@style/text_gray.13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:text="介绍介绍介绍介绍"
+         />
+
+    <!--android:background="@drawable/selector_btn_orange"-->
+</LinearLayout>

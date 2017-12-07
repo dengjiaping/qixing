@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#C6C6C6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/button_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_input"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:src="@drawable/live_input"/>
+        <ImageView
+            android:id="@+id/btn_input2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="135dp"
+            android:visibility="visible"
+            android:src="@drawable/live_input2"/>
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/live_close"/>
+
+        <ImageView
+            android:id="@+id/btn_rotate_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_close"
+            android:src="@drawable/live_switch_cam"/>
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_rotate_icon"
+            android:src="@drawable/live_share"/>
+
+        <ImageView
+            android:id="@+id/btn_gift"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_share"
+            android:visibility="gone"
+            android:src="@drawable/live_gift"/>
+
+    </RelativeLayout>
+
+    <com.qixing.qxlive.rongyun.widget.InputPanel
+        android:id="@+id/input_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</LinearLayout>

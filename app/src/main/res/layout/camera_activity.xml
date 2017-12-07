@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+
+<!-- android:clipToPadding="true"-->
+    <!--android:fitsSystemWindows="true"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+    <com.qixing.view.TestLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+             />
+    </com.qixing.view.TestLayout>
+
+    <com.qixing.qxlive.CameraHintView
+        android:id="@+id/camera_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <fragment
+                android:id="@+id/top_bar"
+                android:name="com.qixing.qxlive.rongyun.ui.fragment.TopBarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                tools:layout="@layout/fragment_topbar" />
+            <LinearLayout
+                android:id="@+id/llgiftcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_bar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="true"
+                android:gravity="top"
+                android:orientation="vertical" />
+            <!--260dp-->
+            <com.qixing.qxlive.rongyun.widget.ChatListView
+                android:id="@+id/chat_listview"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_above="@+id/bottom_bar"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:transcriptMode="alwaysScroll"/>
+
+            <fragment
+                android:id="@+id/bottom_bar"
+                android:name="com.qixing.qxlive.rongyun.ui.fragment.BottomPanelFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                tools:layout="@layout/fragment_bottombar"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_live_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <include
+            layout="@layout/layout_live_info" />
+    </LinearLayout>
+    </FrameLayout>
+
+    <com.yan.bsrgift.BSRGiftLayout
+        android:id="@+id/gift_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

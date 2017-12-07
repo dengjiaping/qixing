@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.qixing.activity.BondListActivity">
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_bond_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_marginRight="@dimen/dimen_20_dp"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:src="@drawable/icon_list_bg"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:id="@+id/bond_list_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_marginRight="@dimen/dimen_20_dp"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bond_list_ll_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_60_dp"
+                    android:layout_marginTop="@dimen/dimen_40_dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.qixing.view.CircleImageView
+                        android:id="@+id/bond_list_second_img"
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:src="@drawable/img_bond_default"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dp"
+                        android:layout_height="@dimen/dimen_20_dp"
+                        android:src="@drawable/icon_rank_second"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bond_list_second_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="虚位以待"
+                    style="@style/text_black.14"
+                    android:layout_marginTop="@dimen/dimen_5_dp"/>
+
+                <TextView
+                    android:id="@+id/bond_list_second_tv_devote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="魅力"
+                    style="@style/text_red.10"
+                    android:layout_marginTop="@dimen/dimen_8_dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bond_list_ll_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_60_dp"
+                    android:layout_marginTop="@dimen/dimen_20_dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.qixing.view.CircleImageView
+                        android:id="@+id/bond_list_first_img"
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:src="@drawable/img_bond_default"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dp"
+                        android:layout_height="@dimen/dimen_20_dp"
+                        android:src="@drawable/icon_rank_first"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bond_list_first_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="虚位以待"
+                    style="@style/text_black.14"
+                    android:layout_marginTop="@dimen/dimen_5_dp"/>
+
+                <TextView
+                    android:id="@+id/bond_list_first_tv_devote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="魅力"
+                    style="@style/text_red.10"
+                    android:layout_marginTop="@dimen/dimen_8_dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bond_list_ll_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_60_dp"
+                    android:layout_marginTop="@dimen/dimen_40_dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.qixing.view.CircleImageView
+                        android:id="@+id/bond_list_third_img"
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/img_bond_default"
+                        android:layout_alignParentBottom="true"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dp"
+                        android:layout_height="@dimen/dimen_20_dp"
+                        android:src="@drawable/icon_rank_third"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/bond_list_third_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="虚位以待"
+                    style="@style/text_black.14"
+                    android:layout_marginTop="@dimen/dimen_5_dp"/>
+
+                <TextView
+                    android:id="@+id/bond_list_third_tv_devote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="魅力"
+                    style="@style/text_red.10"
+                    android:layout_marginTop="@dimen/dimen_8_dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bond_list_view"
+            style="@style/line_gray.0"
+            android:layout_marginRight="@dimen/dimen_20_dp"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_below="@id/bond_list_ll_top"
+            android:layout_marginTop="@dimen/dimen_20_dp"/>
+
+        <ListView
+            android:id="@+id/bond_list_mListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_20_dp"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_below="@id/bond_list_view">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="BGABanner">
+        <!-- 指示点容器背景 -->
+        <attr name="banner_pointContainerBackground" format="reference|color" />
+        <!-- 指示点选中时的背景 -->
+        <attr name="banner_pointFocusedImg" format="reference" />
+        <!-- 指示点未选中时的背景 -->
+        <attr name="banner_pointUnfocusedImg" format="reference" />
+        <!-- 指示点容器左右内间距 -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下外间距 -->
+        <attr name="banner_pointTopBottomMargin" format="dimension" />
+        <!-- 指示点左右外间距 -->
+        <attr name="banner_pointLeftRightMargin" format="dimension" />
+        <!-- 指示点的位置 -->
+        <attr name="banner_pointGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="banner_pointAutoPlayAble" format="boolean" />
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="banner_pointAutoPlayInterval" format="integer" />
+        <!-- 页码切换过程的时间长度 -->
+        <attr name="banner_pageChangeDuration" format="integer" />
+        <!-- 页面切换的动画效果 -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0" />
+            <enum name="alpha" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="cube" value="3" />
+            <enum name="flip" value="4" />
+            <enum name="accordion" value="5" />
+            <enum name="zoomFade" value="6" />
+            <enum name="fade" value="7" />
+            <enum name="zoomCenter" value="8" />
+            <enum name="zoomStack" value="9" />
+            <enum name="stack" value="10" />
+            <enum name="depth" value="11" />
+            <enum name="zoom" value="12" />
+        </attr>
+        <!-- 提示文案的文字颜色 -->
+        <attr name="banner_tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="banner_tipTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BGASwipeItemLayout">
+        <attr name="bga_sil_swipeDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="bga_sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0" />
+            <enum name="layDown" value="1" />
+        </attr>
+        <attr name="bga_sil_springDistance" format="dimension" />
+        <attr name="bga_sil_swipeAble" format="boolean" />
+    </declare-styleable>
+        <string-array name="share">
+        <item>微信好友</item>
+        <item>朋友圈</item>
+        <item>QQ好友</item>
+        <item>QQ空间</item>
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+    </string-array>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />  
+        <attr name="border_color" format="color" />  
+    </declare-styleable>
+    <declare-styleable name="BGATitlebar">
+
+        <attr name="bgatitlebar_leftAndRightTextColor" format="reference|color" />
+        <attr name="bgatitlebar_titleTextColor" format="reference|color" />
+        <attr name="bgatitlebar_leftAndRightTextSize" format="reference|dimension" />
+        <attr name="bgatitlebar_titleTextSize" format="reference|dimension" />
+        <attr name="bgatitlebar_leftAndRightPadding" format="reference|dimension" />
+
+
+        <attr name="bgatitlebar_leftText" format="reference|string" />
+        <attr name="bgatitlebar_rightText" format="reference|string" />
+        <attr name="bgatitlebar_titleText" format="reference|string" />
+        <attr name="bgatitlebar_leftDrawable" format="reference" />
+        <attr name="bgatitlebar_titleDrawable" format="reference" />
+        <attr name="bgatitlebar_rightDrawable" format="reference" />
+        <!-- 当既有titleText，又有titleDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_titleDrawablePadding" format="reference|dimension" />
+        <!-- 当既有leftText，又有leftDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_leftDrawablePadding" format="reference|dimension" />
+        <!-- 当既有rightText，又有rightDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_rightDrawablePadding" format="reference|dimension" />
+
+        <attr name="bgatitlebar_leftMaxWidth" format="reference|dimension" />
+        <attr name="bgatitlebar_rightMaxWidth" format="reference|dimension" />
+        <attr name="bgatitlebar_titleMaxWidth" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberCircleProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_circle_radius" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_fill_mode" format="enum">
+            <enum name="rotate" value="0" />
+            <enum name="rising_water" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="cpb">
+        <attr name="progress_background" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidths" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="maxs" format="integer"></attr>
+        <attr name="textIsDisplayables" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKEs" value="0"></enum>
+            <enum name="FILLs" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressPieView">
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="ppvProgress" format="integer"/>
+        <attr name="ppvMax" format="integer"/>
+        <attr name="ppvStartAngle" format="integer"/>
+        <attr name="ppvInverted" format="boolean"/>
+        <attr name="ppvCounterclockwise" format="boolean"/>
+        <attr name="ppvStrokeWidth" format="dimension"/>
+        <attr name="ppvBackgroundColor" format="reference|color"/>
+        <attr name="ppvProgressColor" format="reference|color"/>
+        <attr name="ppvStrokeColor" format="reference|color"/>
+        <attr name="ppvShowStroke" format="boolean"/>
+        <attr name="ppvShowText" format="boolean"/>
+        <attr name="ppvTypeface" format="string"/>
+        <attr name="ppvImage" format="reference"/>
+        <attr name="ppvProgressFillType" format="enum" >
+            <enum name="radial" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--flashview-master-->
+    <declare-styleable name="FlashView">
+        <attr name="effect">
+            <enum name="accordion" value="0"/>
+            <enum name="cube" value="1"/>
+            <enum name="def" value="2"/>
+            <enum name="depthPage" value="3"/>
+            <enum name="inRightDown" value="4"/>
+            <enum name="inRightUp" value="5"/>
+            <enum name="rotate" value="6"/>
+            <enum name="zoomOutPage" value="7"/>
+
+        </attr>
+    </declare-styleable>
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+    <!--倒计时-->
+    <declare-styleable name="TimeTextView">
+    </declare-styleable>
+
+    <!-- 圆形头像 -->
+    <declare-styleable name="CustomRoundView">
+        <attr name="border_width1" format="dimension"></attr>
+        <attr name="border_color1" format="color"></attr>
+    </declare-styleable>
+</resources>

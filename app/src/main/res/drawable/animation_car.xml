@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--动画帧 duration：100ms-->
+    <item android:drawable="@drawable/lamborghini01" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini02" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini03" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini04" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini05" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini06" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini07" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini08" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini09" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini10" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini11" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini12" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini13" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini14" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini15" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini16" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini17" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini18" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini19" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini20" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini21" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini22" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini23" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini24" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini25" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini26" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini27" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini28" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini29" android:duration="100"/>
+    <item android:drawable="@drawable/lamborghini30" android:duration="100"/>
+
+
+
+
+</animation-list>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_6e"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector"
+        app:bgatitlebar_titleText="@string/action_settings"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bind_phone_tv_context"
+                style="@style/text_gray.13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:text="更换手机号后，新手机号验证成功后可用于登录，当前手机号123456"/>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/bind_phone_ll_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@color/white"
+                        android:paddingLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_launcher"/>
+
+                        <TextView
+                            style="@style/text_black.13"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="手机"/>
+                        <EditText
+                            android:id="@+id/bind_phone_edit_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:gravity="left|center_vertical"
+                            android:hint="请输入手机号"
+                            android:inputType="numberSigned"
+                            android:singleLine="true"
+                            android:textSize="13dp"
+                            android:textColorHint="@color/gray_69"
+                            android:textColor="@color/gray_3f"
+                            android:paddingLeft="10dp" />
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            style="@style/line_gray_v.0"/>
+                        <com.qixing.widget.TimeButton
+                            android:id="@+id/bind_phone_btn_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="发送验证码"
+                            android:textSize="13sp"
+                            android:textColor="@color/color_titlebar_red"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
+                    </LinearLayout>
+                    <View
+                        style="@style/line_gray.0"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_launcher"/>
+
+                    <TextView
+                        style="@style/text_black.13"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="验证码"/>
+                    <EditText
+                        android:id="@+id/bind_phone_edit_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入短信验证码"
+                        android:inputType="numberSigned"
+                        android:singleLine="true"
+                        android:textSize="13dp"
+                        android:textColorHint="@color/gray_69"
+                        android:textColor="@color/gray_3f"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+                <View
+                    style="@style/line_gray.0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

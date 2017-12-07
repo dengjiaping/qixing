@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_F">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150_dp"
+        android:src="@drawable/icon_wallet_bg"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_20_dp"
+        android:paddingBottom="@dimen/dimen_20_dp">
+
+        <LinearLayout
+            android:id="@+id/my_wallet_head_ll_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20_dp"
+                android:layout_height="@dimen/dimen_20_dp"
+                android:src="@drawable/icon_wallet_chongzhi"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                style="@style/text_black.14"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_wallet_head_ll_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20_dp"
+                android:layout_height="@dimen/dimen_20_dp"
+                android:src="@drawable/icon_wallet_tixian"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                style="@style/text_black.14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_wallet_head_ll_zhangdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20_dp"
+                android:layout_height="@dimen/dimen_20_dp"
+                android:src="@drawable/icon_wallet_zhangdan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的账单"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                style="@style/text_black.14"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

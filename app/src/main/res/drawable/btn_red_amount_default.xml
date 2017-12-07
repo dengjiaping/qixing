@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="9dp"
+        android:topLeftRadius="70dp"
+        android:topRightRadius="70dp"
+        android:bottomLeftRadius="70dp"
+        android:bottomRightRadius="70dp"/><!-- 设置圆角半径 -->
+
+    <!-- 渐变
+    <gradient
+        android:startColor="@android:color/white"
+        android:centerColor="@android:color/black"
+        android:endColor="@android:color/black"
+        android:useLevel="true"
+        android:angle="45"
+        android:type="radial"
+        android:centerX="0"
+        android:centerY="0"
+        android:gradientRadius="90"/>-->
+
+    <!-- 间隔各方向的间隔 -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp"/>
+
+
+
+    <!-- 大小
+    <size
+        android:width="50dp"
+        android:height="50dp"/> 宽度和高度 -->
+
+    <!-- 填充 -->
+    <solid
+        android:color="@color/color_btn_red_defailt"/><!-- 填充的颜色 -->
+
+    <!-- 描边-->
+    <stroke
+        android:width="5dp"
+        android:color="@color/white_F"
+        android:dashWidth="0.1dp"
+        />
+    <!--我们还可以把描边弄成虚线的形式，设置方式为：
+        android:dashWidth="5dp"
+        android:dashGap="3dp"
+        android:dashWidth表示'-'这样一个横线的宽度，
+        android:dashGap表示之间隔开的距离。-->
+</shape>

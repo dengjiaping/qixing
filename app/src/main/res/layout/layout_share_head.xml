@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/icon_share_bg"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/share_head_iv_pic"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:src="@drawable/icon_enjoy_vip"
+        android:layout_marginTop="@dimen/dimen_15_dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dp"
+        android:layout_marginBottom="@dimen/dimen_10_dp">
+
+        <TextView
+            android:id="@+id/share_head_tv_xb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            style="@style/text_white.32"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/share_head_iv_xb"
+            android:layout_width="@dimen/dimen_15_dp"
+            android:layout_height="@dimen/dimen_15_dp"
+            android:src="@drawable/icon_share_xb"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/share_head_tv_xb"
+            android:layout_marginLeft="@dimen/dimen_5_dp"/>
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/share_head_btn_jfdh"
+        android:layout_width="@dimen/dimen_180_dp"
+        android:layout_height="@dimen/dimen_36_dp"
+        android:background="@drawable/btn_share_selector"
+        android:text="积分兑换"
+        style="@style/text_white.16"
+        />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BGABanner/BGABanner.iml" filepath="$PROJECT_DIR$/BGABanner/BGABanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewPager/RecyclerViewPager.iml" filepath="$PROJECT_DIR$/RecyclerViewPager/RecyclerViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShortcutBadger/ShortcutBadger.iml" filepath="$PROJECT_DIR$/ShortcutBadger/ShortcutBadger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidPullToRefreshLibrary/androidPullToRefreshLibrary.iml" filepath="$PROJECT_DIR$/androidPullToRefreshLibrary/androidPullToRefreshLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bsrgift/bsrgift.iml" filepath="$PROJECT_DIR$/bsrgift/bsrgift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downloader/downloader.iml" filepath="$PROJECT_DIR$/downloader/downloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imlib/imlib.iml" filepath="$PROJECT_DIR$/imlib/imlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsBridge/jsBridge.iml" filepath="$PROJECT_DIR$/jsBridge/jsBridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/material_dialog_library/material_dialog_library.iml" filepath="$PROJECT_DIR$/material_dialog_library/material_dialog_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pdfview/pdfview.iml" filepath="$PROJECT_DIR$/pdfview/pdfview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qixing.iml" filepath="$PROJECT_DIR$/qixing.iml" />
+    </modules>
+  </component>
+</project>

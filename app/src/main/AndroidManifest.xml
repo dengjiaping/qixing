@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qixing">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 读取权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 写入权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 添加可以向外拨打电话的权限 -->
+
+
+    <!-- 观看直播 权限  start ======================================================================start== -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 观看直播 权限  end ======================================================================end== -->
+
+
+    <!-- 直播权限 start=============================================================================== -->
+    <!-- 使用权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 硬件特性 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 直播权限 end=============================================================================== -->
+
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <!-- 从SDCard读取数据权限 -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <!-- 上网下载pdf需要 -->
+    <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+
+
+    <!-- 微信支付 start============================================================================= -->
+    <!-- 微信支付 end=============================================================================== -->
+
+
+    <!-- 支付宝 权限  start ======================================================================start== -->
+    <!-- 支付宝 权限  end ======================================================================end== -->
+
+
+    <!-- umeng 权限  start ======================================================================start== -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- umeng 权限  end ======================================================================end== -->
+
+
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!-- 极光推送 start================================================================================== -->
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <permission
+        android:name="com.qixing.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.qixing.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 极光推送 end================================================================================== -->
+
+
+    <!-- APP角标    ===================================================================begin=== -->
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.permission.sec.MDM" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <!-- for vivo -->
+    <uses-permission android:name="com.vivo.launcher.permission.UPDATE_BADGE" />
+
+    <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+
+    <!-- for OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <!-- for EvMe -->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <!-- APP 角标=====================================================================end -->
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".welcome.SplashActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcome.GuideActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoTitleBar" />
+
+        <!-- 登录 -->
+        <activity
+            android:name=".welcome.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 注册页面 -->
+        <activity
+            android:name=".welcome.RegistActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".welcome.ForgetPwdActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 三方登录 绑定手机号 -->
+        <activity
+            android:name=".welcome.ComplementUserinfoActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 搜索 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <!-- 个人中心 账户余额 -->
+        <activity
+            android:name=".activity.MyAmountActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 观看历史 -->
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 我的收藏 -->
+        <activity
+            android:name=".activity.MyCollectionActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 观看直播 直播推荐 -->
+        <activity
+            android:name=".activity.QXliveActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 设置 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 绑定账号 -->
+        <activity
+            android:name=".activity.BindAccountActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 更换手机号 -->
+        <activity
+            android:name=".activity.BindPhoneActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 设置 意见反馈 -->
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 设置 修改密码 -->
+        <activity
+            android:name=".activity.SettingPwdActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 -->
+        <activity
+            android:name=".activity.ShopMineActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 忘记支付密码 -->
+        <activity
+            android:name=".activity.ForgetPayPwdActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 设置支付密码 -->
+        <activity
+            android:name=".activity.ModifyPayPwdActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 提现 -->
+        <activity
+            android:name=".activity.CashConfirmActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 银行卡列表 -->
+        <activity
+            android:name=".activity.MyBankActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 添加银行卡 -->
+        <activity
+            android:name=".activity.MyBankAddActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 签名修改接口 -->
+        <activity
+            android:name=".activity.SignatureActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 分销返利 -->
+        <activity
+            android:name=".activity.MyRebateActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 分销返利 报名 -->
+        <activity
+            android:name=".activity.RebateEnterActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 钱包余额 充值 -->
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心  我的消息 -->
+        <activity
+            android:name=".activity.MessageActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+
+        <!-- 阅读PDF文档 -->
+        <activity
+            android:name=".activity.ReadPDFActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 个人中心 推荐视频更多页 -->
+        <activity
+            android:name=".activity.MoreVideosActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 视频列表页 -->
+        <activity
+            android:name=".activity.AllVideosActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 直播 我要直播页面 -->
+        <activity
+            android:name=".qxlive.QXLiveShowActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 直播 观看直播页面 手机 -->
+        <activity
+            android:name=".qxlive.QXLiveSeeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据给用户 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 直播 观看直播页面 摄像机 -->
+        <activity
+            android:name=".qxlive.QXLiveSee2Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 显示数据给用户 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 播放视频 -->
+        <activity
+            android:name=".activity.PlayVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- webview -->
+        <activity
+            android:name=".activity.webview.MyWebActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- webview -->
+        <activity
+            android:name=".activity.webview.MyWebActivity2"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 微信 支付页面 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 微信 分享回调 -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <!-- android:theme="@android:style/Theme.Translucent" -->
+        <!-- 透明 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitle_Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 个人中心 测试 -->
+        <activity
+            android:name=".activity.TestActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 测试 -->
+        <activity
+            android:name=".activity.TestViewPagerActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 个人中心 下载详情 -->
+        <activity
+            android:name=".activity.DownloadDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 个人中心 下载列表 -->
+        <activity
+            android:name=".activity.DownloadManagerActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+
+        <!-- 选择头像 -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.child.ImageCutActivity" />
+
+        <!-- 自动更新广播Receiver -->
+        <receiver android:name=".service.CompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 支付宝 SDK  start ======================================================================start== -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- 支付宝 SDK  end ======================================================================end== -->
+
+
+        <!-- UMENG SDK  start ======================================================================start== -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="585752e32ae85b445100021f" />
+
+        <!-- tencent -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105895250" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- UMENG SDK  end ======================================================================end== -->
+
+
+        <!-- 极光推送 start================================================================================== -->
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.qixing" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".qxlive.FloatingPlayingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.JFAmountActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.CashRecordActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.qixing" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.qixing" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".service.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.qixing" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="82cb2aaf0e15268f48938c20" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- 极光推送end ================================================= -->
+
+
+        <!--
+            <supports-screens
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true"
+            android:anyDensity="true"/>
+        -->
+        <activity android:name=".activity.TestGiftActivity" />
+        <activity
+            android:name=".activity.DownloadListActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.YxListActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 消息详情 -->
+        <activity
+            android:name=".activity.MessageDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 会员中心 -->
+        <activity
+            android:name=".activity.VIPCenterActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 我的钱包 -->
+        <activity
+            android:name=".activity.MyWalletActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <!-- 我的账单 -->
+        <activity
+            android:name=".activity.MyBillActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 分享我赚钱 -->
+        <activity
+            android:name=".activity.ShareProfitActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.webview.RechargeProtocolActivity" />
+        <activity android:name=".activity.BondListActivity"></activity>
+    </application>
+
+</manifest>

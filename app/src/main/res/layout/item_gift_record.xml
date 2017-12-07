@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_15_dp"
+            android:paddingBottom="@dimen/dimen_15_dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/item_gift_record_iv_pic"
+                android:layout_width="@dimen/dimen_50_dp"
+                android:layout_height="@dimen/dimen_50_dp"
+                android:src="@drawable/icon_gift"
+                android:layout_marginLeft="@dimen/dimen_15_dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_gift_record_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1"
+                    style="@style/text_black.18"
+                    android:layout_marginLeft="@dimen/dimen_15_dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/dimen_15_dp">
+
+                    <TextView
+                        android:id="@+id/item_gift_record_tv_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买礼物"
+                        style="@style/text_black.13"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_gift_record_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017-10-18  10:10:10"
+                        style="@style/text_gray.10"
+                        android:layout_marginTop="@dimen/dimen_10_dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_gray.0"
+            android:layout_marginLeft="@dimen/dimen_80_dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

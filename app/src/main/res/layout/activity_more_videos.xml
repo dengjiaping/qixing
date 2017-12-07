@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white_F" >
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mScrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_F"
+            android:paddingTop="10dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_noolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/gray_69"
+                android:text="暂无信息"/>
+            <com.qixing.view.MyListView
+                android:id="@+id/mListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:divider="@color/gray_e2"
+                android:dividerHeight="0.5dp"
+                android:visibility="visible">
+            </com.qixing.view.MyListView>
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>	

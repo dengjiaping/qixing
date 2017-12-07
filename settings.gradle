@@ -1,0 +1,1 @@
+include ':app', ':androidPullToRefreshLibrary', ':alertview', ':material_dialog_library', ':RecyclerViewPager', ':BGABanner', ':imlib', ':pdfview', ':bsrgift', ':downloader', ':ShortcutBadger', ':jsBridge'

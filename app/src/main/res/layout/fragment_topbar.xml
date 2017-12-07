@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_topbar_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_radius_top_black"
+            android:gravity="center_vertical">
+
+            <com.qixing.view.CircleImageView
+                android:id="@+id/top_bar_img_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/img_head_default"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <TextView
+                android:id="@+id/top_bar_tv_head"
+                style="@style/text_white.14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="0人" />
+
+        </LinearLayout>
+
+        <com.qixing.view.HorizontalListView
+            android:id="@+id/top_bar_horizon_listview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"></com.qixing.view.HorizontalListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/top_bar_ll_bondlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/text_bg"
+            android:layout_marginLeft="@dimen/dimen_8_dp"
+            android:paddingLeft="@dimen/dimen_5_dp"
+            android:paddingRight="@dimen/dimen_5_dp"
+            android:paddingTop="@dimen/dimen_2_dp"
+            android:paddingBottom="@dimen/dimen_2_dp">
+
+            <TextView
+                style="@style/text_red.14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排行榜"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_topbar_ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_bar_tv_liveid"
+                style="@style/text_white.14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播号:" />
+
+            <TextView
+                android:id="@+id/top_bar_tv_livetime"
+                style="@style/text_white.14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <Button
+                android:id="@+id/top_bar_btn_attention"
+                style="@style/text_white.13"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_selector"
+                android:text="关注"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/top_bar_btn_clean"
+                style="@style/text_white.13"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_selector"
+                android:text="取消关注"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

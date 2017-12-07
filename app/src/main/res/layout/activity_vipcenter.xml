@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/vip_bg"
+    tools:context="com.qixing.activity.VIPCenterActivity">
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_150_dp"
+                android:src="@drawable/icon_vip_bg"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/white_F"
+                android:paddingTop="@dimen/dimen_15_dp"
+                android:paddingBottom="@dimen/dimen_15_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_50_dp"
+                    android:src="@drawable/icon_enjoy_vip"
+                    android:layout_marginLeft="@dimen/dimen_15_dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="享受VIP特权"
+                        style="@style/text_black.16"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_5_dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/vip_center_iv_biaoshi"
+                            android:layout_width="@dimen/dimen_15_dp"
+                            android:layout_height="@dimen/dimen_15_dp"
+                            android:src="@drawable/icon_not_vip"/>
+
+                        <TextView
+                            android:id="@+id/vip_center_tv_intro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_3_dp"
+                            android:text="会员标识未点亮"
+                            style="@style/text_gray.14"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/vip_center_btn_kaitong"
+                        android:layout_width="@dimen/dimen_100_dp"
+                        android:layout_height="@dimen/dimen_35_dp"
+                        android:background="@drawable/btn_red_selector"
+                        android:layout_marginRight="@dimen/dimen_20_dp"
+                        android:text="开通会员"
+                        style="@style/text_white.16"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/dimen_10_dp"
+                android:paddingBottom="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP会员特权"
+                    style="@style/text_gray.16"
+                    android:layout_marginLeft="@dimen/dimen_15_dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_quanxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_person"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APP会员权限一年"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="轻松享受一年会员特权"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                        <View
+                            style="@style/line_gray.0"
+                            android:layout_marginTop="@dimen/dimen_10_dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_fenhong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_fenhong"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员推广分红"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10%-30%丰厚收益"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                        <View
+                            style="@style/line_gray.0"
+                            android:layout_marginTop="@dimen/dimen_10_dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_tixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_tixian"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="随时提现功能"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分享转发即时收益"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                        <View
+                            style="@style/line_gray.0"
+                            android:layout_marginTop="@dimen/dimen_10_dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_kecheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_kecheng"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="专享网络实战视频课程"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员专享  私人定制"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                        <View
+                            style="@style/line_gray.0"
+                            android:layout_marginTop="@dimen/dimen_10_dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_youhui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_youhui"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="课时费9折优惠"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="轻松受益  一劳永逸"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                        <View
+                            style="@style/line_gray.0"
+                            android:layout_marginTop="@dimen/dimen_10_dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_center_ll_vip_biaoshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dimen_10_dp"
+                    android:paddingBottom="@dimen/dimen_10_dp"
+                    android:background="@color/white_F"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_50_dp"
+                        android:layout_marginLeft="@dimen/dimen_15_dp"
+                        android:src="@drawable/icon_vip_biaoshi"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员尊贵标识"
+                            style="@style/text_black.14"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="专属特权  独具一格"
+                            android:layout_marginTop="@dimen/dimen_10_dp"
+                            style="@style/text_gray.14"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vip_center_btn_vip_kaitong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:layout_marginBottom="@dimen/dimen_20_dp"
+                android:text="开通会员"
+                style="@style/text_white.16"
+                android:textStyle="bold"
+                android:background="@color/color_btn_red_defailt"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

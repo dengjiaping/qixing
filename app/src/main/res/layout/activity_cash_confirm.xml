@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_regist_bg_white" >
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector"
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        style="@style/text_gray.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可提现金额"/>
+                    <EditText
+                        android:id="@+id/cash_confirm_edit_sum"
+                        style="@style/text_red.13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:background="@color/white"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择银行卡号"
+                        android:focusable="false"
+                        android:text="￥0.00"
+                        android:textColorHint="@color/gray_69"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_gray.0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        style="@style/text_gray.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本次提现金额"/>
+                    <EditText
+                        android:id="@+id/cash_confirm_edit_amount"
+                        style="@style/text_black.13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入提现金额"
+                        android:textColorHint="@color/gray_69"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_gray.0"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_gray.13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="提现账号"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    style="@style/line_gray.0"/>
+                <LinearLayout
+                    android:id="@+id/cash_confirm_ll_bank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="20dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:visibility="gone"
+                        android:src="@drawable/icon_setting"/>
+                    <TextView
+                        android:id="@+id/cash_confirm_tv_bankname"
+                        style="@style/text_black.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="选择银行卡"/>
+                    <TextView
+                        android:id="@+id/cash_confirm_tv_bankno"
+                        style="@style/text_black.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""/>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_piont_right"
+                        />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_gray.0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+                    <TextView
+                        style="@style/text_gray.15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付密码"/>
+                    <EditText
+                        android:id="@+id/cash_edit_paypwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:background="@color/white"
+                        android:inputType="textPassword"
+                        android:gravity="left|center_vertical"
+                        android:hint=""
+                        android:textColorHint="@color/gray_69"
+                        android:textColor="@color/gray_3f"
+                        android:paddingLeft="20dp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_gray.0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:layout_marginBottom="@dimen/dimen_10_dp"
+                android:layout_marginLeft="@dimen/dimen_20_dp"
+                android:gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="如有疑问,请致电客服"
+                    style="@style/text_gray.14"/>
+
+                <TextView
+                    android:id="@+id/cash_confirm_tv_kfphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dp"
+                    android:text=""
+                    style="@style/text_red.14" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cash_confirm_btn_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_red_selector"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="提 现"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>	

@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+    <View
+        android:visibility="invisible"
+        style="@style/line_gray.0" />
+    <LinearLayout
+        android:id="@+id/item_dialog_recharge_ll_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_recharge_gray"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_dialog_recharge_tv_money"
+                style="@style/text_black.13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="￥ 6.00 "/>
+            <TextView
+                android:id="@+id/item_dialog_recharge_tv_xingbi"
+                style="@style/text_gray.11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="60星币"/>
+    </LinearLayout>
+</LinearLayout>

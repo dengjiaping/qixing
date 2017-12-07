@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_live_loading"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.qixing.view.TestLayout
+            android:id="@+id/qxlive_see_ll_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_live_loading">
+
+            <SurfaceView
+                android:id="@+id/player_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextureView
+                android:id="@+id/player_texture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/player_img_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_live_loading" />
+        </com.qixing.view.TestLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--230dp-->
+            <com.qixing.qxlive.rongyun.widget.ChatListView
+                android:id="@+id/chat_listview"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:layout_above="@+id/bottom_bar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:transcriptMode="alwaysScroll" />
+
+            <fragment
+                android:id="@+id/top_bar"
+                android:name="com.qixing.qxlive.rongyun.ui.fragment.TopBarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:visibility="visible"
+                tools:layout="@layout/fragment_topbar" />
+
+            <LinearLayout
+                android:id="@+id/llgiftcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_bar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="true"
+                android:gravity="top"
+                android:orientation="vertical" />
+
+            <fragment
+                android:id="@+id/bottom_bar"
+                android:name="com.qixing.qxlive.rongyun.ui.fragment.BottomPanelFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                tools:layout="@layout/fragment_bottombar" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.yan.bsrgift.BSRGiftLayout
+        android:id="@+id/gift_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--<cn.rongcloud.live.ui.animation.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="86dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"/>-->
+</RelativeLayout>

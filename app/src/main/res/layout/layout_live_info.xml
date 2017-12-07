@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="70dp"
+    android:background="@color/translucent_black"
+    android:orientation="vertical" >
+
+
+    <View
+        android:layout_marginTop="@dimen/common_margin_default1"
+        style="@style/line_gray.0"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_default1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/live_info_img_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_logo" />
+
+        <EditText
+            android:id="@+id/live_info_edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:text=""
+            android:hint="写个标题，可以获得更多人气(不超过20个字)"
+            android:maxLength="20"
+            android:textColorHint="@color/white_F"
+            android:textColor="@color/white_F"
+            android:textSize="16dp"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/common_margin_default1"
+        style="@style/line_gray.0"/>
+
+    <Button
+        android:id="@+id/live_info_btn_golive"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_default_selector"
+        style="@style/text_white.16"
+        android:text="开始直播" />
+
+    <CheckBox
+        android:id="@+id/live_info_checkBox_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left"
+        android:textColor="@color/white_F"
+        android:textSize="13dp"
+        android:checked="false"
+        android:text="推荐到首页"/>
+
+</LinearLayout>

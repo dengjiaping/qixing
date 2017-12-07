@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BGABanner" />
+            <option value="$PROJECT_DIR$/RecyclerViewPager" />
+            <option value="$PROJECT_DIR$/ShortcutBadger" />
+            <option value="$PROJECT_DIR$/alertview" />
+            <option value="$PROJECT_DIR$/androidPullToRefreshLibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bsrgift" />
+            <option value="$PROJECT_DIR$/downloader" />
+            <option value="$PROJECT_DIR$/imlib" />
+            <option value="$PROJECT_DIR$/jsBridge" />
+            <option value="$PROJECT_DIR$/material_dialog_library" />
+            <option value="$PROJECT_DIR$/pdfview" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BGABanner" />
+            <option value="$PROJECT_DIR$/RecyclerViewPager" />
+            <option value="$PROJECT_DIR$/ShortcutBadger" />
+            <option value="$PROJECT_DIR$/alertview" />
+            <option value="$PROJECT_DIR$/androidPullToRefreshLibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bsrgift" />
+            <option value="$PROJECT_DIR$/downloader" />
+            <option value="$PROJECT_DIR$/imlib" />
+            <option value="$PROJECT_DIR$/jsBridge" />
+            <option value="$PROJECT_DIR$/material_dialog_library" />
+            <option value="$PROJECT_DIR$/pdfview" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

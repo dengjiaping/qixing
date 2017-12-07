@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+
+   android:background="@color/black"
+    >
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector"
+        app:bgatitlebar_titleText="裁剪和缩放"
+
+        />
+
+    <com.qixing.view.imagecut.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_default_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+        </RelativeLayout>
+</LinearLayout>

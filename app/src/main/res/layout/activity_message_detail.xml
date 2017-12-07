@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_mine_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.qixing.activity.MessageDetailActivity">
+
+    <com.qixing.view.titlebar.BGATitlebar
+        android:id="@+id/mTitleBar"
+        style="@style/TitleBar"
+        app:bgatitlebar_leftDrawable="@drawable/icon_back_selector" />
+
+    <ProgressBar
+        android:id="@+id/webview_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progressDrawable="@drawable/progress_webview"
+        android:visibility="gone" />
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/mWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:fadingEdge="none"
+        android:smoothScrollbar="true">
+
+    </com.github.lzyzsd.jsbridge.BridgeWebView>
+
+</LinearLayout>

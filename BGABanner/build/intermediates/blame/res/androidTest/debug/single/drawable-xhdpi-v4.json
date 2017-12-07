@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android\\project\\qixing\\BGABanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\bga_banner_point_enabled.png",
+        "source": "D:\\android\\project\\qixing\\BGABanner\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\bga_banner_point_enabled.png"
+    },
+    {
+        "merged": "D:\\android\\project\\qixing\\BGABanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\bga_banner_point_disabled.png",
+        "source": "D:\\android\\project\\qixing\\BGABanner\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\bga_banner_point_disabled.png"
+    }
+]

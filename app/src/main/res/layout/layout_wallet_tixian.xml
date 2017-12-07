@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10_dp"
+        android:paddingBottom="@dimen/dimen_10_dp"
+        android:background="@color/vip_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额提现"
+            style="@style/text_gray.14"
+            android:layout_marginLeft="@dimen/dimen_15_dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white_F"
+        android:paddingTop="@dimen/dimen_30_dp"
+        android:paddingBottom="@dimen/dimen_30_dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余金额"
+                style="@style/text_gray.16"/>
+
+            <TextView
+                android:id="@+id/my_wallet_tixian_tv_present_jf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text_black.24"
+                android:layout_marginTop="@dimen/dimen_10_dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/vip_bg">
+
+        <Button
+            android:id="@+id/my_wallet_tixian_btn_shouyi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_marginLeft="@dimen/dimen_15_dp"
+            android:layout_marginRight="@dimen/dimen_15_dp"
+            android:layout_marginTop="@dimen/dimen_30_dp"
+            android:text="兑换收益"
+            style="@style/text_white.16"
+            android:background="@drawable/btn_red_selector"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_30_dp"
+            android:paddingBottom="@dimen/dimen_30_dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/my_wallet_tixian_cb_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="我已阅读并同意"
+                style="@style/text_gray.14"
+                android:drawableLeft="@drawable/recharge_bg"
+                android:drawablePadding="@dimen/dimen_5_dp"/>
+
+            <TextView
+                android:id="@+id/my_wallet_tixian_tv_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《用户充值协议》"
+                style="@style/text_red.14"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

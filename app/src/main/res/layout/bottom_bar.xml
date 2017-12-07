@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whitebg"
+        android:paddingTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bottom_layout_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_img_home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bar_home_onclick"/>
+
+            <TextView
+                android:id="@+id/bottom_tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/home"
+                android:textColor="@color/color_bottom_select"
+                android:textSize="12sp"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_img_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bar_video" />
+
+            <TextView
+                android:id="@+id/bottom_tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/classify"
+                android:textColor="@color/color_bottom_default"
+                android:textSize="12sp"
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout_ewm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_img_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_bar_live_onclick" />
+            <!--android:src="@drawable/tab_more_btn"-->
+            <TextView
+                android:id="@+id/bottom_tv_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="@color/color_bottom_default"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout_shopping_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_img_shopping_car"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bar_info" />
+
+            <TextView
+                android:id="@+id/bottom_tv_shopping_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/shopping_car"
+                android:textColor="@color/color_bottom_default"
+                android:textSize="12sp"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom_layout_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bottom_img_personal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_bar_mine" />
+            <!--android:src="@drawable/tab_more_btn"-->
+            <TextView
+                android:id="@+id/bottom_tv_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/mine"
+                android:textColor="@color/color_bottom_default"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/color_titlebar_default" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+		android:gravity="center_vertical"
+		android:layout_gravity="center_horizontal"
+        >
+        
+        <LinearLayout
+            android:id="@+id/title_ll_left"
+			android:layout_width="50dp"
+			android:layout_height="match_parent"
+          	android:orientation="vertical"
+			android:layout_centerVertical="true"
+          	android:gravity="center"
+          	android:layout_alignParentLeft="true"
+			android:visibility="visible"
+            >
+            <ImageView
+	          	android:id="@+id/title_left_img"
+	          	android:layout_width="25dp"
+	          	android:layout_height="25dp"
+				android:visibility="gone"
+				android:src="@drawable/icon_back"
+				/>
+            <TextView
+                style="@style/text_white.11"
+				android:id="@+id/title_left_tv"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+				android:visibility="gone"
+	        	android:text="分类"
+            />
+        </LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/title_ll_center"
+			android:layout_width="250dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			>
+			<TextView
+				android:id="@+id/title_center_tv_title"
+				style="@style/text_white.18"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:text=""
+				/>
+			<EditText
+				android:id="@+id/title_center_edit_search"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:textSize="15dp"
+				android:background="@color/white"
+				android:gravity="left|center_vertical"
+				android:visibility="gone"
+				android:hint="搜索"
+				android:textColorHint="@color/gray_69"
+				android:textColor="@color/gray_3f"
+				android:paddingLeft="20dp" />
+			<EditText
+				android:id="@+id/title_center_edit_search2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:textSize="15dp"
+				android:background="@color/white"
+				android:gravity="left|center_vertical"
+				android:visibility="gone"
+				android:hint="搜索"
+				android:textColorHint="@color/gray_69"
+				android:textColor="@color/gray_3f"
+				android:paddingLeft="25dp" />
+			<TextView
+				android:id="@+id/title_center_tv_searchtype"
+				style="@style/text_red.18"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="5dp"
+				android:text="宝贝"
+				/>
+		</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_rl_right"
+            android:layout_width="50dp"
+          	android:layout_height="match_parent"
+          	android:orientation="vertical"
+			android:layout_centerVertical="true"
+          	android:gravity="center"
+          	android:layout_alignParentRight="true"
+			android:visibility="visible"
+            >
+			<LinearLayout
+				android:id="@+id/title_ll_right"
+				android:layout_width="50dp"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:visibility="visible"
+				android:gravity="center">
+				<ImageView
+					android:id="@+id/title_right_img"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:visibility="gone"
+					android:src="@drawable/icon_search"
+					/>
+				<TextView
+					android:id="@+id/title_right_tv"
+					style="@style/text_white.11"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="gone"
+					android:text="消息"
+					/>
+			</LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>	

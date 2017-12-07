@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="15dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_dialog_tv_title"
+        style="@style/text_black.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="标题"
+         />
+
+    <TextView
+        android:id="@+id/view_dialog_tv_content"
+        style="@style/text_gray.13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:visibility="gone"
+        android:text="介绍介绍介绍介绍"
+        />
+
+    <EditText
+        android:id="@+id/view_dialog_edit_context"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_white_selector"
+        android:gravity="left|center_vertical"
+        android:textColorHint="@color/gray_69"
+        android:hint=""
+        android:textColor="@color/gray_3f"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/view_dialog_edit_num"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_white_selector"
+        android:gravity="left|center_vertical"
+        android:textColorHint="@color/gray_69"
+        android:inputType="number"
+        android:visibility="gone"
+        android:hint=""
+        android:textColor="@color/gray_3f"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:paddingLeft="10dp" />
+
+    <!--android:background="@drawable/selector_btn_orange"-->
+</LinearLayout>

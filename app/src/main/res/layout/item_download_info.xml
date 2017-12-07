@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="108dp">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/download_info_img_play"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/icon_video_play"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    tools:text="微信" />
+
+                <TextView
+                    android:id="@+id/bt_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:text="下载"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_downpath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_top"
+                android:layout_marginTop="2dp"
+                android:text="下载路径"
+                android:textColor="@color/lightblue"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/pb"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="10M/20M" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/color_rebate_red"
+                        tools:text="没有下载" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:max="100"
+                    tools:progress="30" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightgray" />
+
+</LinearLayout>
+
+

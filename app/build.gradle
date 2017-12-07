@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        applicationId "com.qixing"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 18
+        versionName "2.7"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //在Gradle中修改,让它不要对Lib做preDexing
+    dexOptions {
+        preDexLibraries = false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    lintOptions {
+        disable "ResourceType"
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile fileTree(include: '*/so', dir: 'libs/armeabi-v7a')
+    compile fileTree(include: '*/so', dir: 'libs/arm64-v8a')
+    compile fileTree(include: '*/so', dir: 'libs/x86')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile project(':alertview')
+    compile project(':androidPullToRefreshLibrary')
+    compile project(':material_dialog_library')
+    compile 'cz.msebera.android:httpclient:4.4.1.1'
+    //--------------------- 视频直播 ----------------------------
+    compile files('libs/picasso-2.4.0.jar')
+    compile files('libs/ksylive4.0.jar')
+    compile files('libs/libksyplayer.jar')
+    compile files('libs/libksystat.jar')
+    // 以下几个库是演示案例所使用到的
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    //BGABanner
+
+    //    compile 'com.android.support:support-v4:23.1.0'
+
+    //    compile 'cn.bingoogolapple:bga-banner:2.1.0@aar'
+
+    //BGABanner
+
+    //    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //支付密码框
+    compile 'com.jungly:gridPasswordView:0.3'
+    compile project(':RecyclerViewPager')
+    compile project(':BGABanner')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20160516.jar')
+    compile project(':imlib')
+    compile project(':pdfview')
+    //okhttp
+    compile 'com.lzy.net:okhttputils:1.6.5'
+    //可以单独使用，不需要依赖下方的扩展包
+
+    //umeng
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/SocialSDK_sms.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_QQ_Full.jar')
+    compile files('libs/jpush-android-2.2.0.jar')
+    compile project(':bsrgift')
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.j256.ormlite:ormlite-core:5.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile project(':downloader')
+    compile project(':ShortcutBadger')
+    compile files('libs/core-2.3-SNAPSHOT.jar')
+    compile project(':jsBridge')
+}
+
+task run(type: Exec, dependsOn: 'installDebug') {
+    description 'Installs the APK and runs the main activity: "gradlew :samples:run"'
+    commandLine "${android.sdkDirectory}/platform-tools/adb", 'shell', 'am', 'start', '-n', 'cn.woblog.android.downloader.simple/.MainActivity'
+}

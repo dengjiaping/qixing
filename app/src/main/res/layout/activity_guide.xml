@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_splash_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointTopBottomMargin="4dp"
+        />
+
+    <TextView
+        android:id="@+id/guide_tv_go"
+        style="@style/text_white.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/guide_bg"
+        android:text="跳过"
+        />
+</RelativeLayout>
